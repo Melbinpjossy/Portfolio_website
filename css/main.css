@@ -1,0 +1,98 @@
+.container {
+  max-width: 1200px;
+  margin: 0px 0 20px 0px;
+  padding: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.mainHeader {
+  background-image: url(../images/bg.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.mainHeader h2 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 50px;
+}
+
+.mainHeader h3 {
+  text-align: center;
+  margin-top: 60px;
+  border: 5px solid #dad3d3;
+  width: 60%;
+  margin-left: 50px;
+  font-size: 30px;
+  padding: 3px;
+}
+
+.content {
+  margin-top: 20px;
+  color: black;
+}
+
+.content .info h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content .info h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  border-bottom-color: 2px solid;
+  border-bottom-color: #e922a6;
+}
+
+.content .info .text {
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.content-two {
+  margin-top: 40px;
+}
+
+.content-two .info-two {
+  height: 200px;
+  width: 100%;
+  background-color: grey;
+}
+
+#mainContact {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#mainContact h2 {
+  text-align: center;
+}
+
+#mainContact input, #mainContact textarea {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #efefef;
+  border: 1px solid #999;
+  -webkit-box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.2) inset;
+          box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.2) inset;
+}
+/*# sourceMappingURL=main.css.map */
