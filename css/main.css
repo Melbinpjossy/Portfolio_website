@@ -13,7 +13,12 @@ body {
 
 .mainHeader {
   background-image: url(../images/bkg.png);
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-repeat: no-repeat;
   height: 500px;
   padding: 10px;
@@ -93,12 +98,9 @@ body {
 }
 
 .mainHeader .logo {
-  margin-right: auto;
-}
-
-.mainHeader .logo img {
-  width: 100%;
+  margin-bottom: 40px;
   height: 150px;
+  width: 100%;
 }
 
 .content {
@@ -106,7 +108,7 @@ body {
   color: black;
 }
 
-.content .info h2 {
+.content h2 {
   font-size: 30px;
   text-align: center;
   margin-top: 20px;
@@ -141,17 +143,11 @@ body {
 }
 
 .content-two .info-two a {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 #mainContact {
-  text-align: center;
   color: black;
   font-family: 'Sulphur Point', sans-serif;
 }
@@ -162,15 +158,67 @@ body {
 }
 
 #mainContact input[type=text], #mainContact select, #mainContact textarea {
-  width: 100%;
+  width: 60%;
   display: block;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 60px;
   margin-bottom: 20px;
   padding: 10px;
   background-color: #efefef;
   border: 1px solid #999;
   -webkit-box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.2) inset;
           box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.2) inset;
+}
+
+@media screen and (min-width: 380px) {
+  .mainHeader h3 {
+    margin-left: 65px;
+  }
+  .mainHeader .logo {
+    width: 60%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .mainHeader h3 {
+    margin-left: 60px;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .content .flex .info .text {
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+  }
+  .content .flex2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .content .flex2 .info .text {
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
