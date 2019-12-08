@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0px 0 20px 0px;
@@ -23,7 +27,6 @@ body {
   height: 500px;
   padding: 10px;
   margin-bottom: 50px;
-  width: fit-content;
 }
 
 .mainHeader .mainNav {
@@ -89,9 +92,15 @@ body {
 
 .mainHeader h2:hover {
   -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
   transform: scale(1.3);
-  transition: all .5s linear
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.mainHeader h3:hover {
+  background: red;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .mainHeader h3 {
@@ -103,10 +112,6 @@ body {
   font-size: 30px;
   padding: 3px;
   margin-bottom: 50px;
-}
-
-.mainHeader h3:hover {
-  background: red;
 }
 
 .mainHeader .logo {
@@ -126,8 +131,6 @@ body {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
-
 
 .content .info h3 {
   font-size: 23px;
@@ -152,12 +155,12 @@ body {
   margin-top: 40px;
 }
 
-.content-two .info-two {
-  background-image: url(../images/resume_bg.jpg);
-}
-
 .content-two .info-two img {
   width: 100%;
+}
+
+.content-two .info-two h2 {
+  color: white;
 }
 
 .content-two .info-two a {
@@ -173,6 +176,7 @@ body {
 #mainContact h2 {
   text-align: center;
   font-size: 30px;
+  color: white;
 }
 
 #mainContact input[type=text], #mainContact select, #mainContact textarea {
@@ -187,8 +191,8 @@ body {
           box-shadow: 5px 5px 5px rgba(60, 60, 60, 0.2) inset;
 }
 
-.works .info-work {
-  height: 50%;
+.works .info-two img {
+  width: 50%;
 }
 
 @media screen and (min-width: 380px) {
@@ -199,12 +203,29 @@ body {
     width: 60%;
     margin: 0 0 20px 0;
   }
+  .mainHeader .content-two .info-two h2 {
+    text-align: center;
+  }
+  #mainContact {
+    margin-left: 50px;
+  }
+  #mainContact h2 {
+    color: black;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 440px) {
-  .mainHeader h3 {
+  .container .mainHeader {
+    text-align: center;
+  }
+  .container .mainHeader h2 {
+    font-size: 100px;
+  }
+  .container .mainHeader h3 {
     margin-left: 60px;
     width: 70%;
+    margin-bottom: 100px;
   }
 }
 
@@ -243,53 +264,18 @@ body {
     width: 300px;
   }
 }
-/*# sourceMappingURL=main.css.map */
 
-@media screen and (min-width: 600px) {
-  .mainHeader {
-    width: 1490px;
-    height: 700px;     
-    }
-
-    .mainHeader h2 {
-      text-align: center;
-      font-size: 200px;
-      margin-right: 20px;
-      margin-top: 180px;
-    }
-
-    .mainHeader h3 {
-      margin-left: auto;
-      margin-bottom: 100px;
-      width: 20%;
-    }
-
-    .content h2 {
-      font-size: 70px;
-      text-align: center;
-      margin-left: 320px;
-    }
-
-    .content .flex {
-      margin-left: 300px;
-    }
-
-    .content .flex2 {
-      margin-left: 300px;
-      margin-top: 60px;
-    }
-
-    .content-two .info-two {
-      width: 1510px;
-      height: 400px;
-    }
-
-    .content-two .info-two h2 {
-      color: white;
-      margin-left: 480px;
-      font-size: 50px;
-      padding: 120px;
-    }
+@media screen and (min-width: 800px) {
+  #mainContact {
+    margin-left: 280px;
+  }
+  #mainContact h2 {
+    margin-right: 200px;
+  }
+  .container .mainHeader h3 {
+    width: 40%;
+    margin-left: auto;
+    margin-top: 200px;
   }
 }
-
+/*# sourceMappingURL=main.css.map */
